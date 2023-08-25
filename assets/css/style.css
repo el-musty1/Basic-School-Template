@@ -1,0 +1,469 @@
+html, body{
+	font-family: arial, Verdana, Helvetica, sans-serif;
+	font-size: 17px;
+}
+.custom-fixed{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  right:0;
+  left:0;
+  z-index: 1024;
+  background-color: #a43e04 !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav .link-secondary {
+	font-size: 16px;
+	color: #F1F1F1;
+  text-shadow: 1px 1px red;
+}
+.nav .link-secondary:hover {
+	color:  #f00;
+	text-shadow: 1px 1px #fff;
+}
+
+//.navbar-dark .navbar-toggler {
+  border-color: #a43e04;
+}
+
+.offcanvas .px-3 {
+	display: none !important;
+}
+.offcanvas hr {
+	display: none !important;
+}
+
+@media (max-width: 992px){
+
+	.offcanvas .px-3 {
+		display: block !important;
+	}
+
+	.offcanvas .px-3 span {
+		padding: 5px 10px;
+	}
+
+	.offcanvas hr {
+		display: block !important;
+	}
+	.carousel-item {
+		z-index: -1;
+	}
+
+	//.carousel-caption .btn-primary{
+		z-index: 1 !important;
+	}
+	
+}
+
+#myCarousel .carousel-item:before {
+	content: "";
+	background-image: 
+		linear-gradient(
+			to bottom,
+			transparent, rgba(0,0,0,1.0)
+		);
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+@media (min-width: 768px){
+	header .fa-facebook, .fa-whatsapp, .fa-instagram, .fa-twitter, .fa-linkedin, .fa-youtube {
+		//font-size: 20px;
+		color: #6c757d;
+		padding: 3px 10px;
+		background: white;
+		border-radius: 50%;
+	}
+	
+	header .fa-facebook:hover {
+		background-color: #1877f2;
+		color: #fff !important;
+	}
+	
+	header .fa-whatsapp:hover {
+		background-color: #25D366;
+		color: #fff;
+	}
+	
+	header .fa-twitter:hover {
+		background-color: #00aced;
+		color: #fff !important;
+	}
+	
+	header .fa-linkedin:hover {
+		background-color: #0077B5;
+		color: #fff !important;
+	}
+  
+  header .fa-youtube:hover {
+  	background-color: red;
+  	color: #fff;
+  }
+
+}
+
+@media (max-width: 767px){
+	header .fa-facebook, .fa-instagram, .fa-twitter, .fa-linkedin {
+		font-size: 20px;
+		color: #6c757d;
+		padding: 3px 10px;
+	}
+	.home_nav, .about_nav, .registration_nav, .login_nav {
+		border-bottom: 0px !important;
+	}
+}
+
+
+
+.fa-facebook {
+	color: #1877f2 !important;
+}
+
+.fa-whatsapp {
+	color: #25D366;
+}
+
+
+.fa-twitter {
+	color: #00aced !important;
+}
+
+.fa-linkedin {
+	color: #0077B5 !important;
+}
+
+.fa-youtube {
+	color: red;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 7rem;
+  z-index: 10;
+  color: #f0e9e9;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+//div .fw-bold {
+	color: #dfd7d7 !important;
+}
+.col-lg-6 .about-header, .about-paragraph {
+	color: #dfd7d7 !important;
+	font-family: arial, sans-serif;
+}
+
+.col-lg-6 .about-header {
+	font-family: Georgia, serif;
+}
+
+.home_nav, .about_nav, .registration_nav, .login_nav {
+	border-bottom: 2px solid #d65106 !important;
+}
+
+.home_nav, .about_nav, .registration_nav, .login_nav:hover {
+	border-bottom: inherit;
+	color: #d65106 !important;
+}
+
+.custom-bg-color {
+	background-color: #d65106 !important;
+}
+
+//.carousel-control-next,
+.carousel-control-prev {
+	position: sticky !important;
+	z-index: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	background-color: #d65106;
+	color: #fff;
+}
+
+.dropdown-item {
+	color: #fff;
+}
+
+.dropdown-item:hover {
+	background-color: #d65106;
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.navbar-dark .navbar-nav .nav-link {
+  		color: #d65106 !important;
+	}
+	.navbar-dark .navbar-nav .nav-link:hover {
+		color: #fff !important;
+	}
+	.navbar-dark .navbar-nav .nav-item {
+		
+
+		border-top:1px solid rgba(0,0,0,.15);
+	}
+	.navbar-dark .navbar-nav .nav-item:hover {
+		background-color: #d65106;
+	}
+	.home_nav, .about_nav, .registration_nav, .login_nav {
+		border-bottom: 0px !important;
+	}
+}
+
+.btn-primary {
+	border: 2px solid #fdc10d;
+	background-color: inherit;
+}
+.btn-primary:hover {
+	background-color: #fdc10d;
+	//border-color: inherit;
+}
+
+
+
+.search-bar{
+	border-top-right-radius: 0px !important;
+}
+
+.text-muted {
+	color: #fff !important;
+}
+
+.subscribe-newsletter-input{
+	display: block;
+	width: 100%;
+	padding:.375rem .75rem;
+	font-size: 1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	background-color:#fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	border-bottom-left-radius: .25rem;
+	border-top-left-radius: .25rem;
+	transition:border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.subscribe-btn {
+	border-bottom-right-radius: .25rem;
+	border-top-right-radius: .25rem;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.subscribe-btn {
+	color: #fff;
+	background-color: #d65106;
+	border-color: #a43e04;
+}
+.subscribe-btn:hover{
+	color: #fff;
+	background-color: #a43e04;
+	border-color: #d65106;
+}
+
+.sections-btn{
+	color: #fff;
+	border-radius: .25rem;
+	//border-radius: 70px;
+	background-color: #d65106;
+	border-color: #a43e04;
+	font-size: 17px;
+}
+
+.sections-btn:hover {
+	color: #fff;
+	background-color: #a43e04;
+	border-color: #d65106;
+	transition: background-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.about-btn {
+	color: #fff;
+	border-radius: 70px;
+	background-color: #d65106;
+	border-color: #a43e04;
+	font-size: 17px;
+}
+
+.about-btn:hover {
+	color: #fff;
+	background-color: #a43e04;
+	border-color: #d65106;
+}
+
+div.card {
+	background-color: #fff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.095);
+}
+
+div.card:hover {
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-angle-down{
+	font-weight: bold !important;
+}
+
+#scrollUp {
+	bottom: 45px;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 28px;
+	height: 40px;
+	line-height: 37px;
+	right: 12px;
+	text-align: center;
+	width: 40px;
+	background: #d65106;
+	position: fixed;
+	display: block;
+	z-index: 1;
+}
+
+#scrollUp:hover {
+	background: #a43e04 !important;
+}
+
+.my-4 .sections-header {
+	color: #2a4c71 !important;
+	font-family: arial;
+}
+
+.row .my-4 {
+	box-sizing: border-box;
+  border-left: 7px solid #d65106;
+  background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+	max-width: inherit !important;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+div.card img {
+	height: 250px;
+}
+
+div.card .card-body .card-text {
+	font-size: 17px;
+	font-weight: 400;
+	color: gray;
+	font-family: arial,  sans-serif;
+	text-align: justify;
+}
+
+div.card .card-body .card-title {
+	font-weight: bold !important;
+	font-family: arial;
+	color: #2a4c71 !important;
+	border-left-color: 2px solid #ef5d0a !important; 
+}
+
+div.card .card-body .card-title:hover {
+	text-decoration: underline;
+}
+
+//div ul .dropdown .fa-angle-down {
+	padding-top: 5px !important;
+}
+
+label {
+	font-weight: 400;
+}
+
+.dropdown-menu.animated {
+  animation: slideIn 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dropdown-menu {
+  background-color: #a43e04;
+  color: #fff;
+}
+
+//div .col-sm-6 {
+	border-radius: 50px;
+}
+
+.alert {
+	background-color: #c23321;
+	color: #fff;
+}
+
+div > .btn-close {
+	color: #fff;
+}
+
+.main-header-background {
+	background-image: linear-gradient(90deg, black , gray);;
+}
+
+.main-header-logo {
+	color: white;
+  text-shadow: 2px 2px 5px red;
+}
+
+.form-cointainer {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px 15px 0px 0px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	height: 1.7rem;
+	width: 1.7rem;
+	background-color: #d65106;
+	border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	padding: 5px !important;
+}
